@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background: rgb(169, 172, 169);
+  font-family: "Neuton", serif;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/pexels-photo-10296258.jpg);
+  background-position: top;
+  background-size: cover;
+}
+
+.container {
+  padding: 5px 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav .logo {
+  width: 150px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 5px 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.6rem;
+  position: relative;
+}
+nav ul li a:after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #ff9900;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+  cursor: pointer;
+}
+
+.header-text {
+  margin: 47% auto;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  padding: 1%;
+  max-width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(228, 227, 227, 0.7529411765);
+  box-shadow: 0 0 20px black;
+  border-radius: 25px;
+}
+.header-text h1 {
+  font-size: 60px;
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(219, 139, 139);
+}
+.header-text h1 span {
+  color: rgb(0, 0, 0);
+}
+.header-text p {
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+}
+
+#about {
+  padding: 80px 0;
+  color: #ffffff;
+  margin: 2%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1 {
+  flex-basis: 35%;
+}
+
+.about-col-1 img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.about-col-2 {
+  flex-basis: 60%;
+}
+.about-col-2 .sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+.about-col-2 .tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+.about-col-2 .tab-titles .tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.about-col-2 .tab-titles .tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.about-col-2 .tab-titles .tab-links.active-link::after {
+  width: 100%;
+}
+.about-col-2 .tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+  font-size: 25px;
+}
+.about-col-2 .tab-contents ul li span {
+  color: #b54769;
+}
+.about-col-2 .tab-contents {
+  display: none;
+}
+.about-col-2 .tab-contents.active-tab {
+  display: block;
+}
+
+#services {
+  padding: 30px 0;
+  margin: 2%;
+}
+
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  color: #fff;
+}
+
+.services-list div {
+  background: #262626;
+  padding: 40px;
+  font-size: 15px;
+  font-weight: 300;
+  border-right: 10px;
+  transition: background 0.5s, transform 0.5s;
+  border-radius: 10px;
+}
+
+.services-list div span {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.services-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.services-list div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 20px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.services-list div:hover {
+  background: #b54769;
+  transform: translateY(-10px);
+}
+
+#menu {
+  padding: 30px 0;
+  margin: 2%;
+}
+
+.menus {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.menus .menu {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  width: 300px;
+  color: white;
+  padding: 2%;
+  line-height: 1.5rem;
+  background-color: rgb(64, 64, 67);
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+.menus .menu span {
+  color: #ff568c;
+}
+.menus .menu img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}/*# sourceMappingURL=style.css.map */
