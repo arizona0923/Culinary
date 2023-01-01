@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles\style.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles\style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Neuton:wght@300;400;700&display=swap" rel="stylesheet">
     <title>HG Private Chef</title>
@@ -19,7 +20,7 @@
                     <li><a href="#about">My Story</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#menu">The Menu</a></li>
-                    <li><a href="#">Reserve</a></li>
+                    <li><a href="#contact">Reserve</a></li>
                 </ul>
             </nav>
             <div class="header-text">
@@ -96,7 +97,7 @@
                         this package is perfect for an anniversary between two people or a pair needing an elevated experience.
                          Includes: Entrees, sides, a small desert, a menu, and a complimentary bottle of champagne
                     </p>
-                    <a href="#">learn more</a>
+                    <a href="#contact">learn more</a>
                 </div>
                 <div>
                     <span class="material-symbols-outlined">tapas</span>
@@ -105,7 +106,7 @@
                         this package was made with friends and family in mind. allowing everyone to share and engage in a culinary experience.
                          Includes: Appetizers, Entrees, sides, a menu, and and a complimentary bottle of champagne
                     </p>
-                    <a href="#">learn more</a>
+                    <a href="#contact">learn more</a>
                 </div>
                 <div>
                     <span class="material-symbols-outlined">dinner_dining</span>
@@ -114,7 +115,7 @@
                         this package is capped at 6-7 people. This package requires further communication to make sure your party has one of the most delicious nights ever!
                         Includes: Special Menu that is appropiate for a larger parties
                     </p>
-                    <a href="#">learn more</a>
+                    <a href="#contact">learn more</a>
                 </div>
              </div>
         </div>
@@ -124,7 +125,7 @@
         <div class="conatiner">
             <div class="menu-content">
                 <h1 class="sub-title">Past menus & current flavor profile</h1>
-                <p>You are not limited to these dishes, as you may do special requests and other palletes. When you book we'll send out a complete ingredient list</p>
+                <p> We work together to get you exactly what you want with the correct flavor profile. You are not limited to these dishes, as you may do special requests and other palletes. When you book we'll send out a complete ingredient list</p>
                 <div class="menus">
                     <div class="plate">
                         <img src="assets\pexels-photo-5639896.jpg">
@@ -194,6 +195,68 @@
             </div>
         </div>
     </section>
+    <!--contact-->
+    <section id="contact">
+        <div class="container">
+            <h1 class="sub-title">Reserve your date!</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <p>My team is dedicated to 100% communication to give you the culinary experience where you and your event will absolutely droll over! <br></br>
+                    Complete this form and well reach out! We will review the order, ask/answers any questions, go over pricing, and make sure your dishes are as delicious as ever! 
+                    </p>
+                    <div class="steak-img">
+                        <img src="assets\pexels-photo-323682.jpg" alt="pictutre">
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="number" name="number" placeholder="Phone Number" required>
+                        <input type="text" name="date" placeholder="Date of the Event" required>
+                        <input type="text" name="date" placeholder="Type of Event" required>
+                        <input type="number" name="number" placeholder="Number of people eating" required>
+                        <textarea name="message" id=""rows="10" placeholder="Flavor Profile/Requested Dishes/Types of Dishes"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+
+                    </form>
+                </div>
+            </div>   
+        </div>
+    </section>
+    <!--customer review-->
+    <section id="review">
+        <div class="container">
+            <h1 class="sub-title">Previous dinners</h1>
+            <div class="review-list">
+                <div>
+                    <span class="material-symbols-outlined">favorite</span>
+                    <h2>Christian + Emma 10/17/2022</h2>
+                    <p>
+                        "We celebrated our 4 year anniversary with Humberto as our private chef! The food was Ridiculously good and overall would definetly book again for our next anniversary!"
+                    </p>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined"> diversity_1</span>
+                    <h2>Carlos + party of 4 12/20/2022</h2>
+                    <p>
+                        "this package was perfect! We even had leftovers, the food, laughter and chatter seemed so insync that the event couldnt have been possible without Humbertos culinary expertise! Thank you again the experience of a personal chef for you event is a must!"
+"
+                </div>
+                <div>
+                    <span class="material-symbols-outlined"> school</span>
+                    <h2>Hershal + friends<br> 5/28/2022</h2>
+                    <p>
+                        We wanted to celebrate our recent graduation in a more unique way and humberto made our pallete Unique and the menu so appetizing. He made us feel special and even gave us a free bottle of champagne to celebrate our gradution!
+                    </p>
+                </div>
+             </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer>
+        <p>Humberto Gonzalez Culinary Expert and private chef @2023</p>
+    </footer>
 
     <script src="index.js"></script>
 </body>
