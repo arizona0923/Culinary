@@ -211,7 +211,7 @@ nav ul li a:hover::after {
 
 #menu {
   padding: 30px 0;
-  margin: 2%;
+  margin: 4%;
 }
 
 .menus {
@@ -220,24 +220,51 @@ nav ul li a:hover::after {
   grid-gap: 40px;
   margin-top: 50px;
 }
-.menus .menu {
+.menus .plate {
   position: relative;
   overflow: hidden;
   height: 250px;
   width: 300px;
-  color: white;
-  padding: 2%;
+  color: rgb(255, 255, 255);
   line-height: 1.5rem;
-  background-color: rgb(64, 64, 67);
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: center;
 }
-.menus .menu span {
-  color: #ff568c;
-}
-.menus .menu img {
+.menus .plate img {
   width: 100%;
+  height: 100%;
   border-radius: 10px;
   display: block;
+  transition: transform 2s 0.1s;
+}
+.menus .plate .layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 18px;
+  transition: height 1s 1.1s;
+}
+.menus .plate .layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.plate:hover img {
+  transform: scale(1.4);
+}
+
+.plate:hover .layer {
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
