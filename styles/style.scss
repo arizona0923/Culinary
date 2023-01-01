@@ -344,15 +344,54 @@ p{
     background:#b54769;
     transform: translateY(-10px);
 }
-
-
-
-
-
 footer{
     width: 100%;
     text-align: center;
     padding: 20px 0;
     background: #262626;
     font-weight: 300;
+}
+nav .icon-in{
+    display: none;
+}nav .icon-x{
+    display: none;
+}
+/*----css for small screens----*/ 
+@media only screen and (max-width:600px ) {
+    .header-text{
+        margin-top:100%;
+        font-size: 16px;
+        h1{
+            font-size: 30px;
+        }   
+    }
+    nav .logo{
+        width: 100px;
+    }
+    nav .icon-in{
+        display: block;
+        font-size: 30px;
+        margin-right: 10px;
+        color:white;
+    }
+    nav ul{
+        background-color: #ff004f;
+        position: fixed;
+        top:0;
+        right:-200px;
+        width: 200px;
+        padding-top: 50px;
+        z-index: 2;
+        li{
+            display: block;
+            margin: 25px;
+        }
+       .icon-x{
+            position:absolute;
+            top:25px;
+            left:25px;
+            cursor: pointer;
+            color: white;
+        }
+    }
 }
