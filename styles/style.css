@@ -80,7 +80,7 @@ nav ul li a:hover::after {
   font-size: 60px;
   text-align: center;
   text-decoration: underline;
-  color: rgb(219, 139, 139);
+  color: #ff004f;
 }
 .header-text h1 span {
   color: rgb(0, 0, 0);
@@ -152,7 +152,8 @@ nav ul li a:hover::after {
   font-size: 25px;
 }
 .about-col-2 .tab-contents ul li span {
-  color: #b54769;
+  color: #000000;
+  font-weight: 800;
 }
 .about-col-2 .tab-contents {
   display: none;
